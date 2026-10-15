@@ -26,7 +26,9 @@ test('the home page shows an empty state and student records', function () {
         ->assertSee('View student records')
         ->assertSee('Laravel 13')
         ->assertSee('Tailwind CSS 4')
-        ->assertSee('bg-slate-950 text-slate-100');
+        ->assertSee('bg-[#f5f2eb] text-[#20243b]')
+        ->assertSee('href="#student-form"', escape: false)
+        ->assertSee('hover:-translate-y-0.5');
 
     Student::create(studentAttributes());
 
