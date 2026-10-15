@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bearebaja
+    name: ninocarl
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
